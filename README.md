@@ -33,9 +33,7 @@ dotnet run
 
 ## Authors
 
-* **Anthony Macias** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Anthony Macias** - *Initial work* - [Personal Site](https://anthonymacias.com)
 
 ## License
 
