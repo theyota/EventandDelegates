@@ -6,6 +6,7 @@ using EventandDelegates.Logs;
 namespace EventandDelegates.Message
 {
     public class TextMessage : IMessage
+
     {
         public IList<string> SendTo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string MessageText { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -20,10 +21,11 @@ namespace EventandDelegates.Message
 
         public event EventHandler<LogEventArgs> Texted;
 
-        protected virtual void OnTexted(Log log)
+        public virtual void OnTexted(Log log)
         {
             Texted?.Invoke(this, new LogEventArgs() { Log = log });
         }
+
 
     }
 }

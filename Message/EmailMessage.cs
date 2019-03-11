@@ -22,7 +22,7 @@ namespace EventandDelegates.Message
 
         public event EventHandler<LogEventArgs> Emailed;
 
-        protected virtual void OnTexted(Log log)
+        public virtual void OnTexted(Log log)
         {
             Emailed?.Invoke(this, new LogEventArgs() { Log = log });
         }
